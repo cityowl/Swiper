@@ -39,7 +39,7 @@
                 root: 'src/',
                 styles: 'src/less/',
                 scripts: 'src/js/*.js'
-            },
+            }
         },
         swiper = {
             filename: 'swiper',
@@ -116,7 +116,7 @@
                 'src/js/swiper-proto.js',
                 'src/js/get-jquery.js',
                 'src/js/dom-plugins.js',
-                'src/js/wrap-end-umd.js',
+                'src/js/wrap-end-umd.js'
             ],
             Framework7Files : [
                 'src/js/swiper-intro-f7.js',
@@ -132,7 +132,7 @@
                 'src/js/a11y.js',
                 'src/js/init.js',
                 'src/js/swiper-outro.js',
-                'src/js/swiper-proto.js',
+                'src/js/swiper-proto.js'
             ],
             pkg: require('./bower.json'),
             modules: require('./modules.json'),
@@ -308,7 +308,7 @@
             .pipe(gulp.dest(paths.dist.styles))
             .pipe(cleanCSS({
                 advanced: false,
-                aggressiveMerging: false,
+                aggressiveMerging: false
             }))
             .pipe(header(swiper.banner, { pkg : swiper.pkg, date: swiper.date }))
             .pipe(rename(function(path) {
